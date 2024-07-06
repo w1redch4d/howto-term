@@ -44,21 +44,12 @@ True
 diff: 000032, time: 2218.395ms, solved: False
 ```
 
-in those cases u have to rerun the same command again
+in those cases you have to rerun the same command again
 
 ## Installation
-If u are like me and prefer not to install python packages globally u can do the following:
 ```
-mkdir ~/.local/bin
-cp src/*.py ~/.local/bin
-cp requirements.txt ~/.local/bin
-mv ~/.local/bin/howto.py ~/.local/bin/howto
-chmod 755 ~/.local/bin/howto
-cd ~/.local/bin
-python3 -m venv venv
-source venv/bin/activate
-pip3 install -r requirements.txt
+git clone https://github.com/w1redch4d/howto-term.git
+cd howto-term
+pip install .
 ```
-and then edit the howto file with executable permissions to use the virtualenv python path rather than system python part
-and then edit the .zshrc or .bashrc and add ~/.local/bin to your PATH
 
