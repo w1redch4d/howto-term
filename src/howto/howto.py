@@ -15,7 +15,7 @@ def main():
     cookies = {
     '__Host-next-auth.csrf-token': 'a06d73c86a4cf02ed908290aaa47a72ffdb913759b744b6c0717df67f9ff9444%7Cb7f82de68d69728c529ee7d4744b16845da19e595db7ea842cb880623682d2af',
     '__Secure-next-auth.callback-url': 'https%3A%2F%2Fonramp.unified-8.api.openai.com',
-    'oai-did': 'ad56e64f-32ef-4ee7-99b5-db8878487808',
+    'oai-did': f'{uuid.uuid4()}',
     '_cfuvid': '.ee7jffZMkMOWsNe1AIbhY9uZl_4dg2AE4jrqKceFKg-1719805430643-0.0.1.1-604800000',
     'cf_clearance': 'zy77998K7lTjcxkKeW6YtEcHvqIMtoR78e8IuHe6eNw-1719805431-1.0.1.1-pPEDuP3RJhWhtYzCVnNc932YkI2uV6mxBi_AH_nuGRzHNfK2qUb7fsM8wlkMrqO7.5KNUo1DGXEOMlFqnz.E3w',
     '__cf_bm': 'UiYzLIzenGvXx5.5TExiG_sZRv_ifBN.xi0YR9SErkk-1719822731-1.0.1.1-.IeyxqRayo7hcIOnOh0WYJ2joY4M2B8sAaqnsX5CyteNWKXLB1RFs6bBpaQQdPC6C5YPcmYU4qpGTpLk.7NkkA',
@@ -85,7 +85,7 @@ def main():
             },
         ],
         'parent_message_id': f'{uuid.uuid4()}',
-        'model': 'text-davinci-002-render-sha',
+        'model': 'auto',
         'timezone_offset_min': -330,
         'suggestions': [],
         'history_and_training_disabled': False,
